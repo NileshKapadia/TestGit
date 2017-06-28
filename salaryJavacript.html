@@ -1,95 +1,63 @@
 <!DOCTYPE html>
 <html>
-<Script>
-function myfunction()
-{
-	var salary = prompt("PLEASE ENTER YOUR SALARY");
-	var GENDER = prompt("PLEASE ENTER YOUR GENDER");
-	var dependent = prompt("PLEASE ENTER YOUR DEPENDENT");
-	var dependent = prompt("PLEASE ENTER YOUR DEPENDENT");
-	
-	var income_tax_male=   (salary*18)/100;
-	var income_tax_male3 =   (salary*17)/100;
-	var income_tax_male4 =   (salary*16)/100;
-	var income_tax_female= (salary*16)/100;
-	var income_tax_female3 = (salary*15)/100;
-	var income_tax_female4 = (salary*14)/100;
-	var CPP = (salary*7)/100;
-	var EI = (salary*5)/100;
-	var bonus = 100;
-	var allowance=150;
-	
-	
-	switch(GENDER) {
-	
-	case "M":
-	
-		if(dependent== 2)
-		{
-			
-		deduction= income_tax_male + CPP + EI;
-		total_salary = salary - deduction + bonus + allowance;
-		alert(total_salary);
-		}
-		else if(dependent==3)
-		{
-		   
-		    deduction= income_tax_male33 + CPP + EI;
-			total_salary = salary - deduction + bonus + allowance;
-			alert(total_salary);
-		
-		}
-		else if(dependent==4)
-		{
-			deduction= income_tax_male4 + CPP + EI;
-			total_salary = salary - deduction + bonus + allowance;
-			alert(total_salary);
-		
-		
-		}
-		break;
-	
-	case "F":
-		
-		if(dependent== 2)
-		{
-			
-			deduction= income_tax_female + CPP + EI;
-			total_salary = salary - deduction + bonus + allowance;
-			alert(total_salary);
-		}
-		else if(dependent==3)
-		{
-		   
-		    deduction= income_tax_female3 + CPP + EI;
-			total_salary = salary - deduction + bonus + allowance;
-			alert(total_salary);
-		
-		}
-		else if(dependent==4)
-		{
-			deduction= income_tax_female4 + CPP + EI;
-			total_salary = salary - deduction + bonus + allowance;
-			alert(total_salary);
-		
-		
-		}
-		break;
-		
-		default:
-		var text = "INVALID CHOICE PLEASE ENTER YOUR GENDER";
-		alert(text);
-		break;
-		
-	}
-	
-
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
-myfunction();
 
-</Script>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
 <body>
 
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
 
 </body>
-</html
+</html>
